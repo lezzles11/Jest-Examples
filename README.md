@@ -41,7 +41,23 @@ if (player === "green") {
 - [ ] Use typeof to check type of variable
 - [ ] debugger;
 
+##### What should I test?
+
+| Done? | Component                 | Priority | Estimated Time | Actual Time |
+| ----- | ------------------------- | :------: | :------------: | :---------: |
+|       | Data (look at pizza.json) |    H     |     1 hour     |             |
+|       |                           |          |                |             |
+|       |                           |          |                |             |
+|       |                           |          |                |             |
+
 #### Jest
+
+| Done? | Method            |               When to use                | How to use |         File          |
+| ----- | ----------------- | :--------------------------------------: | :--------: | :-------------------: |
+|       | toMatchSnapshot() | To make sure UI does not randomly change |            | Look at pizza.test.js |
+|       |                   |                                          |            |                       |
+|       |                   |                                          |            |                       |
+|       |                   |                                          |            |                       |
 
 - [ ] The describe keyword helps to provide a better structure to test cases
 
@@ -69,11 +85,11 @@ describe("My first Jest Test specifications, sum", () => {
 
 ## Sprint :athletic_shoe:
 
-| Done? | Component        | Priority | Estimated Time | Actual Time |
-| ----- | ---------------- | :------: | :------------: | :---------: |
-|       | Jest Explanation |    H     |    30 mins     |   30mins    |
-|       |                  |    M     |    30 mins     |   10mins    |
-|       |                  |    M     |    30 mins     |   15 mins   |
+| Done? | Component                 | Priority | Estimated Time | Actual Time |
+| ----- | ------------------------- | :------: | :------------: | :---------: |
+|       | Jest Explanation          |    H     |    30 mins     |             |
+|       | What should I test?       |    M     |    30 mins     |             |
+|       | Run through five examples |    M     |     1 hour     |             |
 
 ### Daily Stand Up :hourglass:
 
