@@ -1,7 +1,5 @@
 # Jest Testing Examples :rocket:
 
-![Testing](https://www.dropbox.com/s/lxia0rv3s1z678n/Screen%20Shot%202020-07-28%20at%2010.22.52.png?raw=1)
-
 ## Purpose :dark_sunglasses:
 
 The purpose of this repository is to have a series of jest examples to reference to later. We write tests to save time, break complex dependencies, think about possible bugs as well as ensure that we can solve problems well.
