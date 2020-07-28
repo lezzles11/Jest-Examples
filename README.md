@@ -4,11 +4,22 @@
 
 ## Purpose :dark_sunglasses:
 
-The purpose of this repository is to have a series of jest examples to reference to later. We write tests to save time, break complex dependencies, think about possible bugs
+The purpose of this repository is to have a series of jest examples to reference to later. We write tests to save time, break complex dependencies, think about possible bugs as well as ensure that we can solve problems well.
 
-### Analogies :open_book:
+### Analogy :open_book:
 
-      You are essentially a grammer editor for a book - you want to make sure that the book follows certain rules, so you write scripts that check for those rules.
+      You are essentially a grammer editor for a book - you want to make sure that the book follows certain rules, so you write scripts that check for those rules. You want to make sure every sentence makes sense.
+
+| Coding Principle                                                                     | Book                                             |
+| ------------------------------------------------------------------------------------ | ------------------------------------------------ |
+| Make sure that you test the SMALLEST possible component - coding is slow. Accept it. | Making sure every sentence makes sense           |
+| Comment well                                                                         | Topic sentences                                  |
+| Print out a cheatsheet of how to debug!                                              | APA Reference Guide                              |
+| console.log EVERY STEP (what did you expect it to output?)                           | Planning before you write your book -            |
+| Use typeof to check type of variable                                                 | Logical consistency within character development |
+| debugger;                                                                            | Using the grammarly app                          |
+
+### Types of Tests :hourglass:
 
 | Frequency | Component         |       When to use        |                          Analogy                           | Complexity |            Library            |
 | --------- | ----------------- | :----------------------: | :--------------------------------------------------------: | :--------: | :---------------------------: |
@@ -41,13 +52,6 @@ if (player === "green") {
     console.log("red")
 }
 ```
-
-##### Good practices
-
-- [ ] Print out a cheatsheet of how to debug!
-- [ ] console.log EVERY STEP (what did you expect it to output?)
-- [ ] Use typeof to check type of variable
-- [ ] debugger;
 
 ##### What should I test?
 
@@ -91,7 +95,7 @@ test("should output name and age", () => {
 - [ ] Change the scripts in package.json
 
 ```
-"test": "jest"
+"test": "jest --watch"
 ```
 
 - [ ]
