@@ -6,6 +6,43 @@ The purpose of this repository is to have a series of jest examples to reference
 
 ### Analogies :open_book:
 
+You are essentially a grammer editor for a book - you want to make sure that the book follows certain rules, so you write scripts that check for those rules.
+
+##### Common Errors
+
+- [ ] Syntax errors (you wrote something wrong)
+      E.g., Code language - not closing bracket / quotes
+
+```
+console.log("hello)
+```
+
+- [ ] Runtime errors (the code fails)
+      e.g., If the method does not exist, and you try to call a method
+
+```
+// if the method printMe does not exist...
+window.printMe()
+```
+
+- [ ] Semantic errors (logical errors )
+      e.g., the logic does not makes sense / not accurate
+
+```
+if (player === "green") {
+    console.log("red")
+}
+```
+
+##### Good practices
+
+- [ ] Print out a cheatsheet of how to debug!
+- [ ] console.log EVERY STEP (what did you expect it to output?)
+- [ ] Use typeof to check type of variable
+- [ ] debugger;
+
+#### Jest
+
 - [ ] The describe keyword helps to provide a better structure to test cases
 
 ```
@@ -22,6 +59,9 @@ describe("My first Jest Test specifications, sum", () => {
 ```
 
 ![Image](https://www.dropbox.com/s/qssnbo02fau4wwc/Screen%20Shot%202020-07-27%20at%2014.01.49.png?raw=1)
+
+- [ ] To only execute one test, do test.only("") instead of test("")
+- [ ]
 
 ### User Stories :telescope:
 
