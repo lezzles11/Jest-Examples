@@ -4,21 +4,17 @@
 
 ## Purpose :dark_sunglasses:
 
-The purpose of this repository is to have a series of jest examples to reference to later.
-![Why Test?](https://www.dropbox.com/s/ejcoyyalt0iokss/Screen%20Shot%202020-07-28%20at%2010.24.20.png?raw=1)
+The purpose of this repository is to have a series of jest examples to reference to later. We write tests to save time, break complex dependencies, think about possible bugs
 
 ### Analogies :open_book:
 
-![Kinds of Tests](https://www.dropbox.com/s/1a882xd3esybee0/Screen%20Shot%202020-07-28%20at%2010.24.29.png?raw=1)
-
-| Done? | Component         | When to use | Estimated Time | Actual Time |
-| ----- | ----------------- | :---------: | :------------: | :---------: |
-|       | Unit Tests        |      H      |     1 hour     |             |
-|       | Integration Tests |             |                |             |
-|       | End to End Test   |             |                |             |
-|       |                   |             |                |             |
-
       You are essentially a grammer editor for a book - you want to make sure that the book follows certain rules, so you write scripts that check for those rules.
+
+| Frequency | Component         |       When to use        |                          Analogy                           | Complexity |            Library            |
+| --------- | ----------------- | :----------------------: | :--------------------------------------------------------: | :--------: | :---------------------------: |
+| High      | Unit Tests        | Fully isolated component |              A sentence - does it make sense?              |    Low     |      Mocha / Chai / Jest      |
+| Middle    | Integration Tests | Units with dependencies  |    A chapter - does it fit with the rest of the story?     |   Middle   |      Mocha / Chai / Jest      |
+| Low       | End to End Test   |        Full Flow         | The entire book - automated script that executes the tests |    High    | Puppeteer (simulates browser) |
 
 ##### Common Errors
 
@@ -68,6 +64,37 @@ Key things to know
 
 - [ ] Jest will test files that have the .test.js or .spec.js extension
 - [ ] Jest will also test all files under the \_ _ tests _ \_ directory
+
+- [ ] Export the function you are trying to run
+
+```
+exports.generateText = (name, age) => {
+  // Returns output text
+  return `${name} (${age} years old)`;
+};
+
+```
+
+- [ ] Create a .test file (and import the file) Import in the traditional way (example below )
+
+```
+// Can pull out some objects
+const { generateText } = require("./util");
+
+// explain what you are trying to test here
+test("should output name and age", () => {
+  const text = generateText("Lesley", 25);
+  expect(text).toBe("Lesley (25 years old)");
+});
+```
+
+- [ ] Change the scripts in package.json
+
+```
+"test": "jest"
+```
+
+- [ ]
 
 | Done? | Method            |               When to use                |                            How to use                            |         File          |
 | ----- | ----------------- | :--------------------------------------: | :--------------------------------------------------------------: | :-------------------: |
